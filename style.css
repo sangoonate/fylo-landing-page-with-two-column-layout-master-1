@@ -35,75 +35,43 @@
 
 *,
 *::before,
-ß *::after {
+*::after {
     box-sizing: inherit;
 }
 
 body {
     margin: 0;
     font-family: Raleway;
+    font-size: 1.1em;
+    --very-dark-blue: hsl(243, 87%, 12%):
 }
 
-.body-container {
-    margin-right: var(--magin-right);
-    margin-left: var(--margin-left);
+.container {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1200px;
 }
 
-.logo-navigation {
-    margin-top: 4em;
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.navigation {
-    float: right;
-    margin-top: 5em;
-    padding: 0em 1em;
-    color: var(--light-gray);
-    font-weight: 400;
-    text-decoration: none;
-    font-size: 16px;
+.align-start {
+    align-items: flex-start;
 }
 
-.here-header {
-    margin-top: 5em;
-    font-style: 700;
+.flex>div,
+.flex>ul {
+    flex: 1;
 }
 
-.here-text {
-    font-family: Open Sans;
-    font-weight: 400;
+.flex>div:first-child {
+    margin-right: 20px;
 }
 
-.img-firstblock {
-    float: right;
-    width: 50%;
-    height: 50%;
-}
-
-.nav-mail {
-    padding: 0.8em 12em 0.8em 0.8em;
-    color: var(--light-gray);
-}
-
-.btn-1 {
-    padding: 1em 5em;
-    margin-left: 2em;
-    background-color: var(--bright-Blue);
-    color: var(--white);
-    border-style: none;
-    border-radius: 10px;
-}
-
-.top-mrg {
-    margin-top: 1em;
-}
-
-.second-block {
-    margin-top: em;
-    background-color: var(--light-grayish-blue);
-}
-
-.secblock-img {
-    float: right;
-    width: 50%;
-    height: 50%;
+.flex>div:last-child {
+    margin-left: 20px;
 }
