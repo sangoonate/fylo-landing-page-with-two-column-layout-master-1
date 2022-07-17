@@ -47,7 +47,6 @@ body {
 .body-container {
     margin-right: var(--magin-right);
     margin-left: var(--margin-left);
-    display: flex;
 }
 
 .logo-navigation {
@@ -69,14 +68,19 @@ body {
     font-style: 700;
 }
 
+.here-text {
+    font-family: Open Sans;
+    font-weight: 400;
+}
+
 .img-firstblock {
     float: right;
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
 }
 
 .nav-mail {
-    padding: 0.8em 14em 0.8em 0.8em;
+    padding: 0.8em 12em 0.8em 0.8em;
     color: var(--light-gray);
 }
 
@@ -87,4 +91,19 @@ body {
     color: var(--white);
     border-style: none;
     border-radius: 10px;
+}
+
+.top-mrg {
+    margin-top: 1em;
+}
+
+.second-block {
+    margin-top: em;
+    background-color: var(--light-grayish-blue);
+}
+
+.secblock-img {
+    float: right;
+    width: 50%;
+    height: 50%;
 }
