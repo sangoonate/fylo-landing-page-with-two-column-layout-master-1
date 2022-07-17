@@ -43,7 +43,7 @@ body {
     margin: 0;
     font-family: Raleway;
     font-size: 1.1em;
-    --very-dark-blue: hsl(243, 87%, 12%):
+    --very-dark-blue: hsl(243, 87%, 12%): --desaturated-blue: hsl(238, 22%, 44%);
 }
 
 .container {
@@ -57,21 +57,4 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.align-start {
-    align-items: flex-start;
-}
-
-.flex>div,
-.flex>ul {
-    flex: 1;
-}
-
-.flex>div:first-child {
-    margin-right: 20px;
-}
-
-.flex>div:last-child {
-    margin-left: 20px;
 }
