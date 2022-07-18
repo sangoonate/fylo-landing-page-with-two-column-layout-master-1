@@ -58,3 +58,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
