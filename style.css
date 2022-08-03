@@ -18,7 +18,8 @@
 
 :root {
     /* # Primary */
-    --very-dark-blue: hsl(243, 87%, 12%): --desaturated-blue: hsl(238, 22%, 44%);
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
     /* # Accent */
     --bright-Blue: hsl(224, 93%, 58%);
     --moderate-cyan: hsl(170, 45%, 43%);
@@ -29,21 +30,40 @@
     --margin-left: 5em;
     --magin-right: 5em;
     box-sizing: border-box;
-    font-family: Raleway;
     font-size: 15px;
 }
 
-*,
+
+/* *,
 *::before,
 *::after {
     box-sizing: inherit;
-}
+} */
 
 body {
     margin: 0;
-    font-family: Raleway;
+    font-family: Open Sans;
     font-size: 1.1em;
-    --very-dark-blue: hsl(243, 87%, 12%): --desaturated-blue: hsl(238, 22%, 44%);
+    color: var(--very-dark-blue);
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex>div,
+.flex>ul {
+    flex: 1;
+}
+
+h1,
+h2,
+h4 {
+    font-family: Raleway;
+}
+
+h2 {
+    font-size: 1.8em;
 }
 
 .container {
@@ -59,7 +79,56 @@ body {
     flex-wrap: wrap;
 }
 
-.navigation {
+nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin: 30px 0;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul a {
+    color: var(--very-dark-blue);
+    font-family: Raleway;
+    text-decoration: none;
+}
+
+.form {
+    display: flex;
+}
+
+.form input {
+    font-family: Raleway;
+    font-size: 14px;
+    flex: 0.7;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: var(--very-dark-blue);
+    padding: 15px;
+}
+
+.form input ::placeholder {
+    color: var(--light-gray);
+}
+
+.form-button {
+    font-family: Raleway;
+    font-weight: 700;
+    color: var(--white);
+    border: 1px solid;
+    border-color: var(--bright-Blue);
+    background-color: var(--bright-Blue);
+    border-radius: 2px;
+    padding: 15px;
+    margin-left: 10px;
+    flex: 0.3;
 }
