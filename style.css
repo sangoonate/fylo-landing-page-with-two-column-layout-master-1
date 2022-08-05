@@ -29,8 +29,6 @@
     --white: #ffffff;
     --margin-left: 5em;
     --magin-right: 5em;
-    box-sizing: border-box;
-    font-size: 15px;
 }
 
 
@@ -43,7 +41,7 @@
 body {
     margin: 0;
     font-family: Open Sans;
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: var(--very-dark-blue);
 }
 
@@ -63,7 +61,7 @@ h4 {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 .container {
@@ -133,14 +131,14 @@ nav ul a {
     flex: 0.3;
 }
 
-.first-c {
+.block-1 {
     background-color: var(--light-grayish-blue);
     margin-top: 100px;
     padding: 50px 0;
     position: relative;
 }
 
-.first-c ::before {
+.block-1::before {
     background-image: url('./images/bg-curve-desktop.svg');
 }
 
@@ -149,10 +147,23 @@ nav ul a {
     padding: 25px;
     border-radius: 5px;
     width: 80%;
+    position: relative;
 }
 
 .testimonial p {
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 1px;
+}
+
+.user-info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.user-info img {
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 10px;
+    width: 50px;
 }
