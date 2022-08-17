@@ -43,6 +43,7 @@ body {
     font-family: Open Sans;
     font-size: 1.2em;
     color: var(--very-dark-blue);
+    font-weight: 400;
 }
 
 img {
@@ -139,7 +140,15 @@ nav ul a {
 }
 
 .block-1::before {
+    content: '';
     background-image: url('./images/bg-curve-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    top: -60px;
 }
 
 .testimonial {
@@ -172,6 +181,7 @@ nav ul a {
 .block-sec {
     background-color: var(--desaturated-blue);
     color: var(--white);
+    padding: 50px 0px;
 }
 
 .block-sec form {
@@ -198,4 +208,9 @@ nav ul a {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.circle {
+    margin-right: 10px;
+    color: var(--white);
 }
