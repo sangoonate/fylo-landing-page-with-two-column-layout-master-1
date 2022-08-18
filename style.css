@@ -209,8 +209,3 @@ nav ul a {
     align-content: center;
     justify-content: center;
 }
-
-.circle {
-    margin-right: 10px;
-    color: var(--white);
-}
