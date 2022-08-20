@@ -78,6 +78,10 @@ h2 {
     flex-wrap: wrap;
 }
 
+.align-start {
+    align-items: flex-start;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -202,10 +206,16 @@ nav ul a {
 
 .footer ul {
     list-style: none;
+    font-size: 1rem;
 }
 
 .social-media {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.circle {
+    color: var(--white);
+    margin-right: 10PX;
 }
