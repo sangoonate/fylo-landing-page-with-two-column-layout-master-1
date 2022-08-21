@@ -5,13 +5,13 @@
 }
 
 @font-face {
-    font-family: Raleway;
+    font-family: RalewayBold;
     src: url("Raleway/static/Raleway-Bold.ttf");
     font-weight: 700;
 }
 
 @font-face {
-    font-family: Open Sans;
+    font-family: OpenSans;
     src: url("Open_Sans/static/OpenSans_Condensed/OpenSans_Condensed-Regular.ttf");
     font-weight: 400
 }
@@ -40,7 +40,7 @@
 
 body {
     margin: 0;
-    font-family: Open Sans;
+    font-family: OpenSans;
     font-size: 1.2em;
     color: var(--very-dark-blue);
     font-weight: 400;
@@ -58,11 +58,12 @@ img {
 h1,
 h2,
 h4 {
-    font-family: Raleway;
+    font-family: RalewayBold;
 }
 
 h2 {
     font-size: 1.2em;
+    margin-top: 0
 }
 
 .container {
@@ -150,23 +151,23 @@ nav ul a {
     background-position: center;
     position: absolute;
     left: 0;
-    height: 60px;
-    width: 100%;
     top: -60px;
+    width: 100%;
+    height: 60px;
 }
 
 .testimonial {
     background-color: var(--white);
     padding: 25px;
     border-radius: 5px;
-    width: 80%;
-    position: relative;
+    width: 42%;
     margin-top: 2em;
+    box-shadow: 0 0 10px --;
 }
 
 .testimonial p {
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 1.7;
     letter-spacing: 1px;
 }
 
@@ -182,6 +183,11 @@ nav ul a {
     width: 50px;
 }
 
+.user-info h4 {
+    margin: 0;
+    font-weight: 700;
+}
+
 .block-sec {
     background-color: var(--desaturated-blue);
     color: var(--white);
@@ -192,21 +198,39 @@ nav ul a {
     flex-direction: column;
 }
 
-.block-sec form input {
+.block-sec form button {
+    background-color: var(--bright-Blue);
+    color: var(--white);
     flex: 1;
+    margin-top: 20px;
+    padding: 15px 30px;
     border: none;
-    padding: 10px 200px 10px 10px;
+}
+
+.block-sec form input {
+    padding: 15px 200px 15px 10px;
     color: var(--light-gray);
+    border: none;
+    box-shadow: 0 0 10px var(--light-gray);
 }
 
 .footer {
     background-color: var(--very-dark-blue);
     color: var(--white);
+    padding: 50px 0;
 }
 
 .footer ul {
     list-style: none;
-    font-size: 1rem;
+    font-family: OpenSans;
+}
+
+.footer ul li {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    text-align: right;
 }
 
 .social-media {
@@ -217,5 +241,13 @@ nav ul a {
 
 .circle {
     color: var(--white);
-    margin-right: 10PX;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
 }
