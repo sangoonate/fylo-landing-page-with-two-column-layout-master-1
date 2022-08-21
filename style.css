@@ -41,7 +41,7 @@
 body {
     margin: 0;
     font-family: OpenSans;
-    font-size: 1.2em;
+    font-size: 25px;
     color: var(--very-dark-blue);
     font-weight: 400;
 }
@@ -59,10 +59,11 @@ h1,
 h2,
 h4 {
     font-family: RalewayBold;
+    font-size: 36px;
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 36px;
     margin-top: 0
 }
 
@@ -185,7 +186,13 @@ nav ul a {
 
 .user-info h4 {
     margin: 0;
+    font-size: 16px;
     font-weight: 700;
+    margin-bottom: -1px;
+}
+
+.user-info small {
+    font-size: 12px;
 }
 
 .block-sec {
