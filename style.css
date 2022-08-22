@@ -63,7 +63,7 @@ h4 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 34px;
     margin-top: 0
 }
 
@@ -77,11 +77,14 @@ h2 {
 .flex {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-.align-start {
-    align-items: flex-start;
+.flex>div:first-child {
+    margin-right: 20px;
+}
+
+.flex>div:last-child {
+    margin-left: 20px;
 }
 
 nav {
@@ -161,7 +164,7 @@ nav ul a {
     background-color: var(--white);
     padding: 25px;
     border-radius: 5px;
-    width: 42%;
+    width: 45%;
     margin-top: 2em;
     box-shadow: 0 0 10px --;
 }
@@ -221,15 +224,19 @@ nav ul a {
     box-shadow: 0 0 10px var(--light-gray);
 }
 
+.align-start {
+    align-items: flex-start;
+}
+
 .footer {
     background-color: var(--very-dark-blue);
     color: var(--white);
-    padding: 50px 0;
 }
 
 .footer ul {
     list-style: none;
     font-family: OpenSans;
+    margin-left: -45px;
 }
 
 .footer ul li {
